@@ -1,3 +1,3 @@
-export default function Word() {
+export default function Word({ correctLetters }) {
   return <p>word</p>;
 }
