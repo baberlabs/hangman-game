@@ -53,7 +53,7 @@ export default function Game({
   function updateHighScores(newScore) {
     const updatedHighScores = [...highScores, newScore];
     updatedHighScores.sort((a, b) => b - a);
-    setHighScores(updatedHighScores.slice(0, 10));
+    setHighScores(updatedHighScores.slice(0, 9));
   }
 
   return (
