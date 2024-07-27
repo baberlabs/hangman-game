@@ -1,3 +1,9 @@
-export default function Hangman({ hangState }) {
-  return <img src={`/src/assets/images/${hangState}.png`} alt="hangmanState" />;
+export default function Hangman({ frame }) {
+  return (
+    <img
+      className="hangman-image"
+      src={`/src/assets/images/${frame}.png`}
+      alt="hangmanState"
+    />
+  );
 }

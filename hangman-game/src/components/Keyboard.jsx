@@ -1,37 +1,30 @@
-export default function Keyboard({ correctLetters, setCorrectLetters }) {
-  function handleClick() {}
+export default function Keyboard({ letters, handleGuess }) {
   const chars = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
+    ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]"],
+    ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "@", "#"],
+    ["z", "x", "c", "v", "b", "n", "m", "<", ">", "?"],
   ];
+
+  function handleClick(e) {
+    if (e.target.tagName === "BUTTON") {
+      e.target.disabled = true;
+      const pressedKey = e.target.innerText;
+      handleGuess(pressedKey);
+
+      if (letters.includes(pressedKey)) {
+        e.target.classList.add("correct-guess");
+      }
+    }
+  }
+
   return (
     <section className="keyboard" onClick={handleClick}>
-      {chars.map((char) => (
-        <button key={char}>{char.toUpperCase()}</button>
+      {chars.map((charSegment, index) => (
+        <div className="keyboard-row" key={index}>
+          {charSegment.map((char) => (
+            <button key={char}>{char.toUpperCase()}</button>
+          ))}
+        </div>
       ))}
     </section>
   );

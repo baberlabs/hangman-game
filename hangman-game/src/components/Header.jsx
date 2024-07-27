@@ -1,11 +1,8 @@
-import HomeButton from "./HomeButton";
-import CurrentScore from "./CurrentScore";
-
 export default function Header({ setPage, currentScore }) {
   return (
-    <>
-      <HomeButton setPage={setPage} />
-      <CurrentScore currentScore={currentScore} />
-    </>
+    <header>
+      <button onClick={() => setPage("home")}>Home</button>
+      <div>Score: {currentScore}</div>
+    </header>
   );
 }

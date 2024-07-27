@@ -1,6 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 4rem;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    place-items: center;
+    justify-content: center;
+}
+
+.home button,
+.game-over button {
+    width: 20rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #111;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background-color: darkcyan;
+}
+
+.home button:disabled {
+    background-color: #444;
+    cursor: auto;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    min-height: 100vh;
+    place-items: center;
+    justify-content: center;
+}
+
+.hangman-image {
+    width: 300px;
+}
+
+.word {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.word > span {
+    background-color: #eee;
+    padding: 1.5rem;
+}
+
+.word > span > .hidden {
+    display: none;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.keyboard-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.keyboard .correct-guess {
+    background-color: lightgreen;
+}
+
+.game-over,
+.game-won {
+    background-color: #000000ee;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    gap: 4rem;
+}
+
+.game-over > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
