@@ -45,6 +45,18 @@ To run this project locally:
 -   CSS
 -   Vite
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/133b3212-928c-4994-8f95-5886c45b470f)
+
+![image](https://github.com/user-attachments/assets/dd6edc33-c524-4b06-bb42-4fd51fb67ea1)
+
+![image](https://github.com/user-attachments/assets/b7a7ac51-4726-4578-99cc-2daf8987e72d)
+
+![image](https://github.com/user-attachments/assets/e61ac61f-a10e-48cf-84ee-e02b464b70a4)
+
+
+
 ## Project Structure
 
 -   `App.jsx`: Main component handling page routing and state management.
