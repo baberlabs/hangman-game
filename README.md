@@ -2,10 +2,14 @@
 
 Welcome to the Hangman Game! This React-based web application offers a fun and interactive way to play the classic word-guessing game.
 
+## Deployed Version
+ Visit [hangman-by-baberr.netlify.app/](https://hangman-by-baberr.netlify.app/)
+
+
 ## Features
 
 -   **Home Page**: Start a new game or view high scores.
--   **Game Page**: Play the Hangman game with a visually updating hangman image.
+-   **Game Page**: Play the Hangman game with a visually updated hangman image.
 -   **High Scores**: Keep track of your best performances.
 -   **Responsive Keyboard**: On-screen keyboard for letter input.
 -   **Score Tracking**: Real-time score updates during gameplay.
